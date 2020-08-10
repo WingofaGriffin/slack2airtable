@@ -1,0 +1,19 @@
+{
+  "name": "slack2airtable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A an app that stores slack messages to an Airtable table",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Griffin S. https://github.com/WingofaGriffin",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^2.2.3",
+    "airtable": "^0.9.0"
+  }
+}
