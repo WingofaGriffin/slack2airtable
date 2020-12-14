@@ -27,6 +27,7 @@ app.event('message', ({ event }) => {
         if (err) { console.error(err); return; }
         records.forEach(function(record) {
           // Run matching of thread timestamp to all timestamps to find parent
+          // This should probably be a hashtable to reduce runtime complexity
           if (event.thread_ts == record.get('ts')) {
             base('table').update([
               {
